@@ -1,0 +1,340 @@
+        // General styles
+
+* {
+    //border: 1px solid rgb(122, 122, 122);
+}
+
+body {
+    background-color: #fff;
+    font-size: 12px;
+    line-height: 1.5;
+    color: black;
+}
+
+        // General styles
+
+        // Fonts
+
+@font-face {
+    font-family: MontserratRegular;
+    src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(fonts/Playfair_Display/PlayfairDisplay-Italic.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(fonts/Raleway/Raleway-Bold.ttf) format('truetype'),
+        url(fonts/Raleway/Raleway/Raleway-Black.ttf) format('truetype'),
+        url(fonts/Raleway/Raleway-ExtraBold.ttf) format('truetype'),
+        url(fonts/Raleway/Raleway-Light.ttf) format('truetype'),
+        url(fonts/Raleway/Raleway-Medium.ttf) format('truetype'),
+        url(fonts/Raleway/Raleway-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Raleway-Regular;
+    src:  url(fonts/Raleway/Raleway-Regular.ttf) format('truetype');
+}
+
+
+        // Fonts end
+
+        // Header
+
+.row .logo {
+    font-family: Montserrat;
+   // font-weight: 600;
+    font-size: 22px;
+    color: black ;
+    &:hover {
+        color: rgb(83, 83, 83);
+        text-decoration: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-block {
+     background: url('images/backgroundHeader.jpg') no-repeat center center;
+     background-size: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 670px;
+}
+
+header {
+    padding-top: 34px;
+    padding-bottom: 15px;
+}
+
+.nav_links li {
+    margin: 0 auto;
+}
+
+.nav_links li a {
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: Montserrat;
+    &:hover {
+        background-color: #00b0ff;
+        color: white;
+
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    img {
+        margin: 0 5px;
+    }
+}
+
+.header-title{
+    margin: 100px 0;
+}
+
+.header-title h1, .header-title h5 {
+    font-family: PlayfairDisplay;
+    font-style: italic;
+    font-weight: normal;   
+}
+
+.header-title h5 {
+    color: white;
+    font-size: 24px;
+    text-shadow: 0 3px 15px rgba(0, 0, 0, 0.64);
+}
+
+.header-title h1 {
+    font-size: 50px;
+}
+
+        // Header end
+
+        // Boards
+
+.block {
+    //height: 545px;
+    .container .col-md-12 {
+        h6 {
+            font-size: 146px;
+            font-family: Montserrat;
+            color: #fafafa;
+            letter-spacing: 0.2em;
+           // margin-top: 150px;
+        }
+    }
+}
+
+.boards .main {
+    background: url(images/bdBoards.png) no-repeat center center;
+    margin: 0 auto;
+    
+    //position: absolute;
+    margin-top: -235px;
+    margin-bottom: 175px;
+}
+
+.boards .col-md-4 img {
+    margin: 65px 65px;
+}
+
+.boards .col-md-1 {
+    margin: 0 0 0 65px;
+    .img-block {
+        margin-top: 168px;
+        img {
+            margin-bottom: 3px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            transition: 0.3s linear;
+            -webkit-transition: 0.3s linear;
+            &:hover {
+                border: 3px solid #00b0ff;
+                transition: 0.2s linear;
+            }
+        }
+        
+    }
+}
+
+
+.boards .col-md-5 {
+    h6 {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Montserrat;
+        margin-top: 45px;
+    }
+    .stars img{
+        margin-bottom: 41px;
+        &:hover {
+            background: yellow;
+        }
+    }
+    .list {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        margin-bottom: 25px;
+         a{
+            font-size: 14px;
+            font-family: Raleway;
+            font-weight: bold;
+            color: #a0a0a0;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            &:hover {
+                color: black;
+                text-decoration: none;
+                border-bottom: 3px solid #00b0ff;
+            }
+            &::selection {
+                color: black;
+            }
+        }
+    }
+    p {
+        font-family: Raleway-Regular;
+        color: #787878;
+        margin-bottom: 35px;
+    }
+    .price {
+        span {
+            font-family: Montserrat;
+            margin-right: 27px;
+            font-size: 24px;
+        }
+        button {
+            padding: 15px 30px;
+            background-color: white;
+            color: black;
+            border-radius: 0;
+            border: 1px solid;
+            font-family: Montserrat;
+            font-weight: bold;
+            font-size: 14px;
+            &:hover {
+                color: white;
+                background-color: #00b0ff;
+            }
+        }
+        margin-bottom: 83px;
+    }
+    .view {
+        font-family: MontserratRegular;
+        font-weight: 200;
+        color: #00b0ff;
+        font-size: 16px;
+        padding-bottom: 4px;
+        border: none;
+        &:hover {
+            border-bottom: 2px solid #00b0ff;
+            text-decoration: none;
+        }
+    }
+    
+}
+
+
+        // content abou-us
+
+.about-us {
+    margin-top: -40px;
+    background: url('images/bg_about_us.jpg') no-repeat center center;
+    background-size: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 645px;
+    
+}
+.col-md-6 .container {
+    margin-top: -345px;
+    background-color: white;
+    .text-content{
+        padding: 95px 20px;
+        h6{
+        font-family: Montserrat;
+        font-size: 14px;
+        letter-spacing: 0.2em;
+        font-weight: bold;
+        text-align: left;
+    }
+    a {
+        font-size: 16px;
+        font-family: MontserratRegular;
+        text-decoration: none;
+        color: #00b0ff;
+        padding-bottom: 1px;
+        &:hover {
+            border-bottom: 2px solid #00b0ff;
+        }
+    }
+    .text-contents {
+        font-family: PlayfairDisplay;
+        font-size: 18px;
+       
+        
+    }
+}
+}
+
+.img-video {
+    margin-top: -80px;
+    margin-left: 50px;
+    background-color: inherit; 
+}
+
+        // content abou-us end
+
+        // latest updates
+
+        .latest-updates {
+            margin-top: 200px;
+            h6 {
+                font-family: Montserrat;
+                font-size: 14px;
+            }
+            .cards {
+                margin-top: 40px;
+                .card {
+                    border: none;
+                    &:hover {
+                        color: #0022ff;
+                        border: 1px solid #a0a0a0;
+                        box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2)
+                    }
+                    img {
+                        width: 100%;
+                        
+                    }
+                }
+                .card-button {
+                    .btn {
+                        margin: 40px 0;
+                        border: 1px solid;
+                        font-family: Montserrat;
+                        font-weight: inherit;
+                        font-size: 14px;
+                        letter-spacing: 0.1em;
+                        border-radius: 0;
+                        padding: 15px 28px;
+                        &:hover {
+                            color: white;
+                            background-color: #00b0ff;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        // latest updates end
